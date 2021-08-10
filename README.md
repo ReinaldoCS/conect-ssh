@@ -29,4 +29,4 @@ $ yarn dev
 
 ---
 
-Made with 💜 by REINALDO  👋 [See my LinkedIn](https://www.linkedin.com/in/reinaldo-correia-ba19ab179/)
+Made by REINALDO  👋 [See my LinkedIn](https://www.linkedin.com/in/reinaldo-correia-ba19ab179/)
