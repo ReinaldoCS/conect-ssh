@@ -20,11 +20,10 @@ var commandLine = `
 console.log('================================')
 console.log(process.env.VAR_TEST)
 console.log('================================')
-
 /***
-  Realiza a conexão com servidor usando o simple-ssh e executando os comando passado
-  passado na variável coomandLine e com isso realiza com console.log nas respotas e
-  em caso de erro mostra o código do erro.
+* Realiza a conexão com servidor usando o simple-ssh e executando os comando passado
+* passado na variável coomandLine e com isso realiza com console.log nas respotas e
+* em caso de erro mostra o código do erro.
 ***/
 
 ssh
@@ -37,3 +36,11 @@ ssh
   }
 })
 .start();
+
+
+
+
+/***
+ *  [ ] try catch de erro de conexão
+ *  
+ ***/
