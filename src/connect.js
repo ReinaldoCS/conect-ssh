@@ -36,11 +36,3 @@ ssh
   }
 })
 .start();
-
-
-
-
-/***
- *  [ ] try catch de erro de conexão
- *  
- ***/

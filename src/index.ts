@@ -1,19 +1,8 @@
 import { Client } from 'ssh2';
 
+import { commandShell } from './commandShell'
+
 const conn = new Client();
-
-const commands = `
-  ls -l\necho "asdasdasdasdasdasdasdasda"\nexit
-`;
-
-
-// ==================================
-
-console.log(process.env.HOST_SERVER)
-console.log(process.env.HOST_SERVER_USER)
-console.log(process.env.HOST_SERVER_PASS)
-
-// ==================================
 
 conn.on('ready', () => {
   console.log('Client :: ready');
@@ -25,13 +14,13 @@ conn.on('ready', () => {
     }).on('data', (data: string) => {
       console.log('OUTPUT: ' + data);
     });
-    stream.end(commands);
+    stream.end(commandShell);
   });
 }).connect({
-  host: process.env.HOST_SERVER,
-  port: 22,
-  username: process.env.HOST_SERVER_USER,
-  password: process.env.HOST_SERVER_PASS
+host: process.env.HOST_SERVER,
+port: 22,
+username: process.env.HOST_SERVER_USER,
+password: process.env.HOST_SERVER_PASS
 });
 
 
