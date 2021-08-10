@@ -8,7 +8,6 @@
     "start": "tsc; node dist/index.js"
   },
   "dependencies": {
-    "simple-ssh": "^1.0.0",
     "ssh2": "^1.2.0"
   },
   "devDependencies": {
