@@ -4,9 +4,9 @@ var SSH = require('simple-ssh');
 // Informações de conexão com servidor.
 
 var ssh = new SSH({
-  host: '192.168.1.13',
-  user: 'usertest',
-  pass: '1234'
+  host: process.env.HOST_SERVER,
+  user: process.env.HOST_SERVER_USER,
+  pass: process.env.HOST_SERVER_PASS
 });
 
 // Comando a ser executando.
