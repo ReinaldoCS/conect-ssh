@@ -28,8 +28,14 @@ conn.on('ready', () => {
     stream.end(commands);
   });
 }).connect({
-  host: '192.168.100.125',
+  host: process.env.HOST_SERVER,
   port: 22,
-  username: 'usertest',
-  password: '1234'
+  username: process.env.HOST_SERVER_USER,
+  password: process.env.HOST_SERVER_PASS
 });
+
+
+// host: '192.168.100.125',
+// port: 22,
+// username: 'usertest',
+// password: '1234'
