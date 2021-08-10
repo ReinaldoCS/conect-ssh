@@ -4,7 +4,7 @@ Esta aplicação tem como objetivo realizar a conexão com o servidor e executar
 
 ### 🚀 Tecnologies
 
-- Javascript
+- Typescript
 
 # 🔧 Colocando o projeto para rodar
 
@@ -23,8 +23,11 @@ $ cd connect-ssh
 # Instalando as dependências
 $ yarn install
 
-# Iniciando o projeto
-$ yarn dev
+# Build do projeto
+$ npx build 
+
+# Rodando o script
+$ yarn start
 ```
 
 ---

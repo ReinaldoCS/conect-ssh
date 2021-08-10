@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/connect.js"
+    "build": "tsc",
+    "start": "tsc; node dist/index.js"
   },
   "dependencies": {
     "simple-ssh": "^1.0.0",
