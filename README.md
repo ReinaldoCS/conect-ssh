@@ -1,8 +1,8 @@
 # 📖 Sobre
 
-Esta aplicação tem como objetivo realizar a conexão com o servidor e executar linhas de comando via shellscript utilizando o a lib [simple-ssh](https://github.com/MCluck90/simple-ssh)
+Esta aplicação tem como objetivo realizar a conexão com o servidor e executar linhas de comando via shellscript utilizando o a lib [ssh2](https://github.com/mscdex/ssh2)
 
-### 🚀 Tecnologies
+### 🚀 Tecnologias
 
 - Typescript
 
