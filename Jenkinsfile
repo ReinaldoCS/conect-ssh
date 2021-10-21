@@ -6,7 +6,6 @@ node {
     stage('version') {
         sh 'npm -v'
         sh 'npx -v'
-        sh 'yarn -v'
     }
 
     stage('Build') {
