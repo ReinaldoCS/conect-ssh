@@ -1,11 +1,12 @@
 node {    
     stage('Git') {
-        git 'https://github.com/ReinaldoCS/connect-ssh'
+        git 'https://github.com/ReinaldoCS/connect-ssh.git'
     }
 
     stage('version') {
         sh 'npm -v'
         sh 'npx -v'
+        sh 'ls -la'
     }
 
     stage('Build') {
