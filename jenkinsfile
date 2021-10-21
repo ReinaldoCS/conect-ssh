@@ -1,0 +1,23 @@
+node {    
+    stage('Git') {
+        git 'https://github.com/ReginaldoDeAraujo/connect-ssh'
+    }
+
+    stage('version') {
+        sh 'npm -v'
+        sh 'npx -v'
+        sh 'yarn -v'
+    }
+
+    stage('Build') {
+        sh 'npm install'        
+    }
+
+    stage('Npm Build') {        
+            sh 'npx build'      
+    }
+
+    stage('Test') {
+        sh 'npm start'       
+    }   
+}
